@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-typedef struct Vendedor 
+typedef struct 
 {
     char *nome;
     float faturamento;
@@ -37,7 +37,8 @@ int main(int argc, char const *argv[])
 
     Vendedor vendedor[10];
 
-    for (int i=0; i<10; i++) {
+    for (int i=0; i<10; i++) 
+    {
 
         int r = aleatorio(1, 13);
 
@@ -96,10 +97,12 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-float calcula_salario(float faturamento) {
+float calcula_salario(float faturamento) 
+{
     return 500.0 + faturamento*0.09;
 }
 
-int aleatorio(int a,int b)  {
+int aleatorio(int a,int b)  
+{
     return (a+rand()%(b-a+1));
 }

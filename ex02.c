@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     printf("Digite até 100 caracteres: ");
     fgets(string, 100, stdin);
 
-    printf("%s\n\n", string);
+    printf("%s\n", string);
 
     for (size_t i = 0; i < 100; i++)
     {
